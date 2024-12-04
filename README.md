@@ -17,7 +17,8 @@ Hemos desarollado una arquitectura basada en Node-Red para recoger datos de sens
 
 Comenzamos desarrollando una arquitectura:
 
------LIDIA------
+![image](https://github.com/user-attachments/assets/0bd0f7ef-1b74-4268-8265-edc4fac478cf)
+
 
 La arquitectura descrita se ha traducido a un sistema que utiliza mydevices para simular dispositivos, MQTT para enviar los mensajes y Node-Red para recibirlos, procesarlos e incorporarlos al dashboard. 
 
