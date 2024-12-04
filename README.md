@@ -2,7 +2,7 @@
 
 Nombre de la solución: HomeWatcher
 
-La idea principal de este dispostivo es la detección de la entrada de personas externas en el interior de un lugar privado. Esto se conseguiría con la actuación de diferentes sensores que nos ayudan a saber el estado de la casa, oficina, ... Pueden ser sensores de detección de presencia, detección de vibraciones por si se intenta forzar una puera o una ventana, detector magnético, para detectar la apertura de puertas sin que sea el dueño, ... y también actuadores en caso de la detección de un agente externo, como buzzers o una alarma.
+La idea principal de este sistema es la detección de la entrada de personas externas en el interior de un lugar privado. Esto se conseguiría con la actuación de diferentes sensores que nos ayudan a saber el estado de la casa, oficina, ... Pueden ser sensores de detección de presencia, detección de vibraciones por si se intenta forzar una puera o una ventana, detector magnético, para detectar la apertura de puertas sin que sea el dueño, ... y también actuadores en caso de la detección de un agente externo, como buzzers o una alarma.
 
 El grupo está formado por los siguientes miembros:
 - Ivanildo 
@@ -13,9 +13,38 @@ El grupo está formado por los siguientes miembros:
 
 ## Node-Red
 
-Hemos desarollado una arquitectura basada en Node-Red para recoger datos de sensores de presencia, apertura y rotura de puertas y ventanas, botones de pánico... y mostrarlos en un dashboard para ver el estado del sistema. 
+Hemos desarollado una arquitectura con soporte Node-Red, formada por los siguientes sensores y actuadores:sensor de rotura de cristales, sensor de presencia, sensor magnético, botón de pánico y buzzer.
+Estos sensores forman parte de un sistema, IoT, de intrusión; que enviará datos a la nube de forma constante. La gestión de datos se hace con Node-Red, pudiendo acceder el cliente fácilmente a los mismos haciendo uso del dashboard asociado.
 
-Comenzamos desarrollando una arquitectura:
+El sistema desarrollado se estructura en las siguientes capas, que conjuntamente forman y componen la arquitectura que se describe a continuación:
+1. Capa de dispositivos físicos IoT (IoT Node Layer)
+   Esta capa es la encargada de interactuar con el entorno; recogiendo datos en tiempo real del medio físico: movimiento/presencia, rotura de cristales, forcejeo de puertas y ventanas.
+   Es el punto de entrada de datos al sistema; y de ejecución de las órdenes correspondientes.
+
+2. Capa de Gateway
+Este dispositivo actúa como un intermediario entre los dispositivos IoT locales y la nube.
+Realiza la traducción de protocolos, el filtrado de datos y la agregación de información.
+Facilita la conexión de dispositivos que usan tecnologías locales (como Zigbee, LoRa, Wi-Fi) al Internet global.
+
+3. Capa de Comunicación (Internet)
+Funciona como el canal de comunicación que conecta los dispositivos locales con la nube.
+Asegura que los datos puedan ser transmitidos de manera bidireccional entre los dispositivos IoT y la nube/Internet.
+
+4. Capa de Procesamiento (Node-RED y Computación en la Nube)
+Node-RED:
+Herramienta de programación visual para integrar flujos de datos entre diferentes dispositivos y servicios.
+Actúa como un middleware, conectando sensores, actuadores y sistemas de análisis.
+Cloud Computing:
+Los datos son procesados, almacenados y analizados en la nube.
+Ofrece capacidad para análisis avanzado, gestión de eventos y almacenamiento a largo plazo.
+
+5. Capa de Usuarios
+Usuarios:
+Representa a los individuos o sistemas que interactúan con la plataforma IoT.
+Los usuarios pueden ser operadores, administradores o clientes finales que acceden a los datos o controlan los dispositivos.
+Interacción:
+Los usuarios reciben notificaciones, toman decisiones o envían comandos a través de interfaces, como aplicaciones móviles o paneles web.
+
 
 ![image](https://github.com/user-attachments/assets/0bd0f7ef-1b74-4268-8265-edc4fac478cf)
 
