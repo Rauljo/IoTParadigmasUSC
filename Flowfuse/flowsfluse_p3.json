@@ -1,0 +1,881 @@
+[
+    {
+        "id": "ee2019af8ac50aa3",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "f8b9ac8ed56ca16d",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "76d6add1466fdf0b",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "192.168.1.131",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "6dadb82df24c8cbe",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "",
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "43844929343cf6cb",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "fb348634255de044",
+        "type": "ui_group",
+        "name": "Activación/desactivación sistema",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "66d0a1a6a7e9605d",
+        "type": "ui_group",
+        "name": "Estado do sistema",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "32fea4fba86e3bee",
+        "type": "ui_group",
+        "name": "Estado dos sensores",
+        "tab": "",
+        "order": 3,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "db4582aba88ec190",
+        "type": "ui_group",
+        "name": "Estado dos actuadores",
+        "tab": "",
+        "order": 4,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b3764b70295577e0",
+        "type": "ui_spacer",
+        "z": "ee2019af8ac50aa3",
+        "name": "spacer",
+        "group": "fb348634255de044",
+        "order": 1,
+        "width": "1",
+        "height": "1"
+    },
+    {
+        "id": "52638b972e5a08b9",
+        "type": "ui_tab",
+        "name": "Sistema de intrusión",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "19188b280d875823",
+        "type": "ui_group",
+        "name": "On/Off Sistema",
+        "tab": "52638b972e5a08b9",
+        "order": 1,
+        "disp": true,
+        "width": 3,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "eee170e561c4afcf",
+        "type": "ui_group",
+        "name": "Estado del sistema",
+        "tab": "52638b972e5a08b9",
+        "order": 2,
+        "disp": true,
+        "width": 4,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "7927c19432b9c32a",
+        "type": "ui_group",
+        "name": "Estado de los sensores",
+        "tab": "52638b972e5a08b9",
+        "order": 3,
+        "disp": true,
+        "width": 5,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "12c9034a7cf4d8cb",
+        "type": "ui_group",
+        "name": "Estado de los actuadores",
+        "tab": "52638b972e5a08b9",
+        "order": 6,
+        "disp": true,
+        "width": 5,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "98e9ddfaa8875ad5",
+        "type": "ui_group",
+        "name": "On/Off LED",
+        "tab": "52638b972e5a08b9",
+        "order": 4,
+        "disp": true,
+        "width": 4,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "6291c39e2a018825",
+        "type": "ui_group",
+        "name": "On/Off BUZZER",
+        "tab": "52638b972e5a08b9",
+        "order": 5,
+        "disp": true,
+        "width": 4,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "0fdbf9acc30de1dc",
+        "type": "ui_button",
+        "z": "ee2019af8ac50aa3",
+        "name": "",
+        "group": "19188b280d875823",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "ACTIVAR SISTEMA",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "ACTIVAR",
+        "payloadType": "str",
+        "topic": "sistema/control",
+        "topicType": "msg",
+        "x": 120,
+        "y": 40,
+        "wires": [
+            [
+                "894a5519060b4a67",
+                "cae2b08c405618f5"
+            ]
+        ]
+    },
+    {
+        "id": "29499e2214a434d6",
+        "type": "ui_button",
+        "z": "ee2019af8ac50aa3",
+        "name": "",
+        "group": "19188b280d875823",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "DESACTIVAR SISTEMA",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "DESACTIVAR",
+        "payloadType": "str",
+        "topic": "sistema/control",
+        "topicType": "msg",
+        "x": 130,
+        "y": 120,
+        "wires": [
+            [
+                "894a5519060b4a67",
+                "cae2b08c405618f5"
+            ]
+        ]
+    },
+    {
+        "id": "894a5519060b4a67",
+        "type": "mqtt out",
+        "z": "ee2019af8ac50aa3",
+        "name": "",
+        "topic": "sistema/control",
+        "qos": "2",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "76d6add1466fdf0b",
+        "x": 580,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "cae2b08c405618f5",
+        "type": "debug",
+        "z": "ee2019af8ac50aa3",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 560,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "462b8143433f39da",
+        "type": "ui_button",
+        "z": "ee2019af8ac50aa3",
+        "name": "",
+        "group": "98e9ddfaa8875ad5",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "ENCENDER LED",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "ENCENDER",
+        "payloadType": "str",
+        "topic": "control/led",
+        "topicType": "msg",
+        "x": 110,
+        "y": 220,
+        "wires": [
+            [
+                "c2be1c380a0202a5",
+                "6a70b841b7f0e258"
+            ]
+        ]
+    },
+    {
+        "id": "c2be1c380a0202a5",
+        "type": "mqtt out",
+        "z": "ee2019af8ac50aa3",
+        "name": "",
+        "topic": "control/led",
+        "qos": "2",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "76d6add1466fdf0b",
+        "x": 570,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "6a70b841b7f0e258",
+        "type": "debug",
+        "z": "ee2019af8ac50aa3",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 560,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "c486c29ae9b83bef",
+        "type": "ui_button",
+        "z": "ee2019af8ac50aa3",
+        "name": "",
+        "group": "98e9ddfaa8875ad5",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "APAGAR LED",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "APAGAR",
+        "payloadType": "str",
+        "topic": "control/led",
+        "topicType": "msg",
+        "x": 100,
+        "y": 300,
+        "wires": [
+            [
+                "c2be1c380a0202a5",
+                "6a70b841b7f0e258"
+            ]
+        ]
+    },
+    {
+        "id": "1a2413b224c29d56",
+        "type": "ui_button",
+        "z": "ee2019af8ac50aa3",
+        "name": "",
+        "group": "6291c39e2a018825",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "ENCENDER BUZZER",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "ENCENDER",
+        "payloadType": "str",
+        "topic": "control/buzzer",
+        "topicType": "msg",
+        "x": 120,
+        "y": 400,
+        "wires": [
+            [
+                "6283ee074f90fdcc",
+                "68d2d8d9a71c97e0"
+            ]
+        ]
+    },
+    {
+        "id": "6283ee074f90fdcc",
+        "type": "mqtt out",
+        "z": "ee2019af8ac50aa3",
+        "name": "",
+        "topic": "control/buzzer",
+        "qos": "2",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "76d6add1466fdf0b",
+        "x": 580,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "68d2d8d9a71c97e0",
+        "type": "debug",
+        "z": "ee2019af8ac50aa3",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 560,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "5b1b5284eb4cce4e",
+        "type": "ui_button",
+        "z": "ee2019af8ac50aa3",
+        "name": "",
+        "group": "6291c39e2a018825",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "APAGAR BUZZER",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "APAGAR",
+        "payloadType": "str",
+        "topic": "control/buzzer",
+        "topicType": "msg",
+        "x": 110,
+        "y": 480,
+        "wires": [
+            [
+                "6283ee074f90fdcc",
+                "68d2d8d9a71c97e0"
+            ]
+        ]
+    },
+    {
+        "id": "85396afd6d5901d8",
+        "type": "mqtt in",
+        "z": "ee2019af8ac50aa3",
+        "name": "",
+        "topic": "sistema/estado",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "76d6add1466fdf0b",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 840,
+        "y": 40,
+        "wires": [
+            [
+                "2d8268566d70095b"
+            ]
+        ]
+    },
+    {
+        "id": "cae65126bd5f07a8",
+        "type": "mqtt in",
+        "z": "ee2019af8ac50aa3",
+        "name": "",
+        "topic": "sensor/pir",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "76d6add1466fdf0b",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 820,
+        "y": 120,
+        "wires": [
+            [
+                "bdc8b5d4a1e4a510"
+            ]
+        ]
+    },
+    {
+        "id": "2f6a7e4fcf34bf53",
+        "type": "mqtt in",
+        "z": "ee2019af8ac50aa3",
+        "name": "",
+        "topic": "sensor/vibracion_sw420",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "76d6add1466fdf0b",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 860,
+        "y": 200,
+        "wires": [
+            [
+                "ed66fe4ad6e092e2"
+            ]
+        ]
+    },
+    {
+        "id": "da018588bf9ed0ea",
+        "type": "mqtt in",
+        "z": "ee2019af8ac50aa3",
+        "name": "",
+        "topic": "sensor/vibracion_ky002",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "76d6add1466fdf0b",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 860,
+        "y": 280,
+        "wires": [
+            [
+                "adb0d28cc7980bf0"
+            ]
+        ]
+    },
+    {
+        "id": "4ff4b099927e79fd",
+        "type": "mqtt in",
+        "z": "ee2019af8ac50aa3",
+        "name": "",
+        "topic": "sensor/magnetico",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "76d6add1466fdf0b",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 850,
+        "y": 360,
+        "wires": [
+            [
+                "9693af5cd862c2eb"
+            ]
+        ]
+    },
+    {
+        "id": "c89ee8ffec12cc53",
+        "type": "mqtt in",
+        "z": "ee2019af8ac50aa3",
+        "name": "",
+        "topic": "actuador/led",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "76d6add1466fdf0b",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 830,
+        "y": 440,
+        "wires": [
+            [
+                "1e5e8b190bb05665"
+            ]
+        ]
+    },
+    {
+        "id": "1ab82ff638bff3f7",
+        "type": "mqtt in",
+        "z": "ee2019af8ac50aa3",
+        "name": "",
+        "topic": "actuador/buzzer",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "76d6add1466fdf0b",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 840,
+        "y": 540,
+        "wires": [
+            [
+                "ac5603f21511b4b6"
+            ]
+        ]
+    },
+    {
+        "id": "2d8268566d70095b",
+        "type": "ui_text",
+        "z": "ee2019af8ac50aa3",
+        "group": "eee170e561c4afcf",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Estado del sistema",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1130,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "bdc8b5d4a1e4a510",
+        "type": "ui_text",
+        "z": "ee2019af8ac50aa3",
+        "group": "7927c19432b9c32a",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "PIR",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1090,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "ed66fe4ad6e092e2",
+        "type": "ui_text",
+        "z": "ee2019af8ac50aa3",
+        "group": "7927c19432b9c32a",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "SENSOR VIBRACIÓN _SW420",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1170,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "adb0d28cc7980bf0",
+        "type": "ui_text",
+        "z": "ee2019af8ac50aa3",
+        "group": "7927c19432b9c32a",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "SENSOR VIBRACIÓN KY002",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1170,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "9693af5cd862c2eb",
+        "type": "ui_text",
+        "z": "ee2019af8ac50aa3",
+        "group": "7927c19432b9c32a",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "MAGNÉTICO",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1120,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "1e5e8b190bb05665",
+        "type": "ui_text",
+        "z": "ee2019af8ac50aa3",
+        "group": "12c9034a7cf4d8cb",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "LED",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1090,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "ac5603f21511b4b6",
+        "type": "ui_text",
+        "z": "ee2019af8ac50aa3",
+        "group": "12c9034a7cf4d8cb",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "BUZZER",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1100,
+        "y": 540,
+        "wires": []
+    }
+]
