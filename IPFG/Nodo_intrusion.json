@@ -1,0 +1,559 @@
+[
+    {
+        "id": "ee2019af8ac50aa3",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "f8b9ac8ed56ca16d",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "76d6add1466fdf0b",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "192.168.1.131",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "43844929343cf6cb",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "52638b972e5a08b9",
+        "type": "ui_tab",
+        "name": "Sistema de intrusión",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "6dadb82df24c8cbe",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "",
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "fb348634255de044",
+        "type": "ui_group",
+        "name": "Activación/desactivación sistema",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "66d0a1a6a7e9605d",
+        "type": "ui_group",
+        "name": "Estado do sistema",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "32fea4fba86e3bee",
+        "type": "ui_group",
+        "name": "Estado dos sensores",
+        "tab": "",
+        "order": 3,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "db4582aba88ec190",
+        "type": "ui_group",
+        "name": "Estado dos actuadores",
+        "tab": "",
+        "order": 4,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "19188b280d875823",
+        "type": "ui_group",
+        "name": "On/Off Sistema",
+        "tab": "52638b972e5a08b9",
+        "order": 1,
+        "disp": true,
+        "width": 3,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "eee170e561c4afcf",
+        "type": "ui_group",
+        "name": "Estado del sistema",
+        "tab": "52638b972e5a08b9",
+        "order": 2,
+        "disp": true,
+        "width": 4,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "7927c19432b9c32a",
+        "type": "ui_group",
+        "name": "Estado de los sensores",
+        "tab": "52638b972e5a08b9",
+        "order": 3,
+        "disp": true,
+        "width": 5,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "12c9034a7cf4d8cb",
+        "type": "ui_group",
+        "name": "Estado de los actuadores",
+        "tab": "52638b972e5a08b9",
+        "order": 6,
+        "disp": true,
+        "width": 5,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "98e9ddfaa8875ad5",
+        "type": "ui_group",
+        "name": "On/Off LED",
+        "tab": "52638b972e5a08b9",
+        "order": 4,
+        "disp": true,
+        "width": 4,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "6291c39e2a018825",
+        "type": "ui_group",
+        "name": "On/Off BUZZER",
+        "tab": "52638b972e5a08b9",
+        "order": 5,
+        "disp": true,
+        "width": 4,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b3764b70295577e0",
+        "type": "ui_spacer",
+        "z": "ee2019af8ac50aa3",
+        "name": "spacer",
+        "group": "fb348634255de044",
+        "order": 1,
+        "width": "1",
+        "height": "1"
+    },
+    {
+        "id": "050c41abd7a84f6b",
+        "type": "function",
+        "z": "ee2019af8ac50aa3",
+        "name": "Subir archivo a pinata",
+        "func": "\nconst pinata = new PinataWeb3.PinataSDK({\n    pinataJwt: \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySW5mb3JtYXRpb24iOnsiaWQiOiJmYWE5NjVmOC02ZTY1LTRjMjEtYjRjZS0wN2VhNjQwNzk5NjkiLCJlbWFpbCI6Im1hbnUuY2YzMEBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwicGluX3BvbGljeSI6eyJyZWdpb25zIjpbeyJkZXNpcmVkUmVwbGljYXRpb25Db3VudCI6MSwiaWQiOiJGUkExIn0seyJkZXNpcmVkUmVwbGljYXRpb25Db3VudCI6MSwiaWQiOiJOWUMxIn1dLCJ2ZXJzaW9uIjoxfSwibWZhX2VuYWJsZWQiOmZhbHNlLCJzdGF0dXMiOiJBQ1RJVkUifSwiYXV0aGVudGljYXRpb25UeXBlIjoic2NvcGVkS2V5Iiwic2NvcGVkS2V5S2V5IjoiY2E1OTViNTdjOTgyOWZjMjhjZWYiLCJzY29wZWRLZXlTZWNyZXQiOiIwYTNkN2E3MzI1MDY5YmFhMGZlNjE3MWViNDM2MzdhMmJiODRhYjE5MzA5MzUzMTNjODVlY2Y4NmJmOGY0Y2UyIiwiZXhwIjoxNzY4NTkwNTExfQ.PRhPiLmtXS0G8qjZiqv6oDvXqEq54Wz0KfD0nX-BGho\",\n    pinataGateway: \"Ae6-ow4Bh5UyIhz4szLYRFuAWagQvghcAf36cbOIcVdbFZpzh_th-vmUswJKcV9d\"\n});\nconst path = msg.payload;  // El path del archivo se pasó en el msg.payload desde la función Python\n\nconst blob = new\n    buffer.Blob([fs.readFileSync(path)]);\nreturn new Promise((resolve, reject) => {\n    pinata.upload\n        .file(blob)\n        .addMetadata({\n            name: \"test.txt\",\n            keyValues: {\n                whimsey: 100\n            }\n        })\n        .then((data) => {\n            node.log(\"Datos obtenidos desde el gateway: \" +\n                JSON.stringify(data));\n            resolve({ payload: data });\n        })\n        .catch((error) => {\n            node.error(\"Error obteniendo los datos: \" +\n                error.message);\n            reject(error);\n        });\n});\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "PinataWeb3",
+                "module": "pinata-web3"
+            },
+            {
+                "var": "fs",
+                "module": "fs"
+            },
+            {
+                "var": "buffer",
+                "module": "buffer"
+            },
+            {
+                "var": "File",
+                "module": "File"
+            }
+        ],
+        "x": 620,
+        "y": 140,
+        "wires": [
+            [
+                "1852fcb9850a47c6",
+                "eaf62d2c8c53d036"
+            ]
+        ]
+    },
+    {
+        "id": "8bbc0ba9f7c8edc0",
+        "type": "inject",
+        "z": "ee2019af8ac50aa3",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 100,
+        "y": 100,
+        "wires": [
+            [
+                "5e0aebaa718decb3"
+            ]
+        ]
+    },
+    {
+        "id": "1852fcb9850a47c6",
+        "type": "debug",
+        "z": "ee2019af8ac50aa3",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 880,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "eaf62d2c8c53d036",
+        "type": "function",
+        "z": "ee2019af8ac50aa3",
+        "name": "guardar el archivo en la blockchain",
+        "func": "const { ethers } = global.get('ethers');\nconst contractAddress = \"0x98E9D4b06307995A1975350A47F415b050faA8e8\";  // Dirección del contrato\nconst abi = [\n\t{\n\t\t\"anonymous\": false,\n\t\t\"inputs\": [\n\t\t\t{\n\t\t\t\t\"indexed\": true,\n\t\t\t\t\"internalType\": \"address\",\n\t\t\t\t\"name\": \"user\",\n\t\t\t\t\"type\": \"address\"\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"indexed\": false,\n\t\t\t\t\"internalType\": \"string\",\n\t\t\t\t\"name\": \"fileHash\",\n\t\t\t\t\"type\": \"string\"\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"indexed\": false,\n\t\t\t\t\"internalType\": \"uint256\",\n\t\t\t\t\"name\": \"timestamp\",\n\t\t\t\t\"type\": \"uint256\"\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"indexed\": false,\n\t\t\t\t\"internalType\": \"string\",\n\t\t\t\t\"name\": \"sensorType\",\n\t\t\t\t\"type\": \"string\"\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"indexed\": false,\n\t\t\t\t\"internalType\": \"uint256\",\n\t\t\t\t\"name\": \"sensorValue\",\n\t\t\t\t\"type\": \"uint256\"\n\t\t\t}\n\t\t],\n\t\t\"name\": \"SensorAlertTriggered\",\n\t\t\"type\": \"event\"\n\t},\n\t{\n\t\t\"inputs\": [\n\t\t\t{\n\t\t\t\t\"internalType\": \"address\",\n\t\t\t\t\"name\": \"\",\n\t\t\t\t\"type\": \"address\"\n\t\t\t}\n\t\t],\n\t\t\"name\": \"alertStatus\",\n\t\t\"outputs\": [\n\t\t\t{\n\t\t\t\t\"internalType\": \"bool\",\n\t\t\t\t\"name\": \"\",\n\t\t\t\t\"type\": \"bool\"\n\t\t\t}\n\t\t],\n\t\t\"stateMutability\": \"view\",\n\t\t\"type\": \"function\"\n\t},\n\t{\n\t\t\"inputs\": [\n\t\t\t{\n\t\t\t\t\"internalType\": \"string\",\n\t\t\t\t\"name\": \"fileHash\",\n\t\t\t\t\"type\": \"string\"\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"internalType\": \"uint256\",\n\t\t\t\t\"name\": \"pirValue\",\n\t\t\t\t\"type\": \"uint256\"\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"internalType\": \"uint256\",\n\t\t\t\t\"name\": \"vibration1Value\",\n\t\t\t\t\"type\": \"uint256\"\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"internalType\": \"uint256\",\n\t\t\t\t\"name\": \"vibration2Value\",\n\t\t\t\t\"type\": \"uint256\"\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"internalType\": \"uint256\",\n\t\t\t\t\"name\": \"magneticoValue\",\n\t\t\t\t\"type\": \"uint256\"\n\t\t\t}\n\t\t],\n\t\t\"name\": \"checkSensorsAndTriggerAlert\",\n\t\t\"outputs\": [],\n\t\t\"stateMutability\": \"nonpayable\",\n\t\t\"type\": \"function\"\n\t},\n\t{\n\t\t\"inputs\": [],\n\t\t\"name\": \"getAlertStatus\",\n\t\t\"outputs\": [\n\t\t\t{\n\t\t\t\t\"internalType\": \"bool\",\n\t\t\t\t\"name\": \"\",\n\t\t\t\t\"type\": \"bool\"\n\t\t\t}\n\t\t],\n\t\t\"stateMutability\": \"view\",\n\t\t\"type\": \"function\"\n\t},\n\t{\n\t\t\"inputs\": [],\n\t\t\"name\": \"getFileHash\",\n\t\t\"outputs\": [\n\t\t\t{\n\t\t\t\t\"internalType\": \"string\",\n\t\t\t\t\"name\": \"\",\n\t\t\t\t\"type\": \"string\"\n\t\t\t}\n\t\t],\n\t\t\"stateMutability\": \"view\",\n\t\t\"type\": \"function\"\n\t},\n\t{\n\t\t\"inputs\": [\n\t\t\t{\n\t\t\t\t\"internalType\": \"string\",\n\t\t\t\t\"name\": \"fileHash\",\n\t\t\t\t\"type\": \"string\"\n\t\t\t}\n\t\t],\n\t\t\"name\": \"setFileIPFS\",\n\t\t\"outputs\": [],\n\t\t\"stateMutability\": \"nonpayable\",\n\t\t\"type\": \"function\"\n\t},\n\t{\n\t\t\"inputs\": [\n\t\t\t{\n\t\t\t\t\"internalType\": \"address\",\n\t\t\t\t\"name\": \"\",\n\t\t\t\t\"type\": \"address\"\n\t\t\t}\n\t\t],\n\t\t\"name\": \"userFiles\",\n\t\t\"outputs\": [\n\t\t\t{\n\t\t\t\t\"internalType\": \"string\",\n\t\t\t\t\"name\": \"\",\n\t\t\t\t\"type\": \"string\"\n\t\t\t}\n\t\t],\n\t\t\"stateMutability\": \"view\",\n\t\t\"type\": \"function\"\n\t}\n];\n\n// Conexión a Ethereum\nconst provider = new ethers.providers.JsonRpcProvider(\"https://sepolia.infura.io/v3/6421697a47b84ae085ef458718c6cb97\");  // RPC Sepolia\nconst privateKey = \"79bf78d9edbfeb420e8c193916e87172b6daa5af36535cc5b8a96396cc80ea78\";  // Reemplaza con tu clave privada\nconst signer = new ethers.Wallet(privateKey, provider);\nconst contract = new ethers.Contract(contractAddress, abi, provider);\nconst ipfsWithSigner = contract.connect(signer);\n\n// Leer los datos de los sensores\nconst sensorData = msg.payload.data;  // Suponiendo que los datos son procesados y contienen los valores de los sensores\nconst fileHash = msg.payload.IpfsHash;  // El hash del archivo\n\n//node.warn(fileHash);\n//node.warn(`Contrato: ${JSON.stringify(contract, null, 2)}`);\n//node.warn(`Dirección del contrato: ${contract.address}`);\n//node.warn(`Funciones disponibles: ${Object.keys(contract.functions)}`);\n//node.warn(`Proveedor conectado: ${provider.connection.url}`);\n\nif (!contract.functions.setFileIPFS) {\n\tnode.warn(\"La función `setFileIPFS` no está definida en el contrato.\");\n}\nreturn new Promise(async (resolve, reject) => {\n    try {\n\n        // Llamamos a la función del contrato\n        //const tx1 = await ipfsWithSigner.setFileIPFS(fileHash);\n\n\t\tconst tx2 = await ipfsWithSigner.checkSensorsAndTriggerAlert(\n            fileHash,\n            0,       // Valor PIR\n            1, // Vibración 1\n            0, // Vibración 2\n            0  // Magnético\n        );\n        // Mostramos información de la transacción\n        node.log(\"Transacción enviada: \" + tx2.hash);\n        const receipt = await tx2.wait();\n        node.log(\"Transacción confirmada en el bloque: \" + receipt.blockNumber);\n\n        resolve({\n            payload: {\n                hash: tx2.hash,\n                blockNumber: receipt.blockNumber,\n                gasUsed: receipt.gasUsed.toString()\n            }\n        });\n    } catch (error) {\n        node.error(\"Error al interactuar con el contrato: \" + error.message);\n        reject(error);\n    }\n\n});",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "PinataWeb3",
+                "module": "pinata-web3"
+            },
+            {
+                "var": "fs",
+                "module": "fs"
+            },
+            {
+                "var": "buffer",
+                "module": "buffer"
+            },
+            {
+                "var": "File",
+                "module": "File"
+            }
+        ],
+        "x": 920,
+        "y": 180,
+        "wires": [
+            [
+                "c7b1ffe574f1887c"
+            ],
+            [
+                "5236b86e268e46f4"
+            ]
+        ]
+    },
+    {
+        "id": "c7b1ffe574f1887c",
+        "type": "debug",
+        "z": "ee2019af8ac50aa3",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1180,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "5236b86e268e46f4",
+        "type": "debug",
+        "z": "ee2019af8ac50aa3",
+        "name": "debug 7",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1200,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "a5692a860448da4d",
+        "type": "debug",
+        "z": "ee2019af8ac50aa3",
+        "name": "debug 8",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 540,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "5e0aebaa718decb3",
+        "type": "python-function",
+        "z": "ee2019af8ac50aa3",
+        "name": "",
+        "func": "# Suponemos que los datos se pasan a través de msg.payload, por ejemplo:\n# msg.payload = {'pir': 0, 'vibracion1': 1, 'vibracion2': 0, 'magnetico': 1, 'timestamp': 1678901234}\nimport time\n# Extraemos los datos del mensaje\npir = 0\nvibracion1 = 0\nvibracion2 = 0\nmagnetico = 0\ntimestamp = int(time.time())\n\n# Crear la línea de texto que se va a escribir en el archivo\nline = f\"pir:{pir}, vibracion1:{vibracion1}, vibracion2:{vibracion2}, magnetico:{magnetico} timestamp:{timestamp}\\n\"\n\n# Ruta al archivo de texto\nfilename = \"/home/manuel/.node-red/test.txt\"  # Asegúrate de que la ruta sea correcta\nfilename2 = \"/home/manuel/.node-red/test_historico.txt\"  # Asegúrate de que la ruta sea correcta\n\n# Abrir el archivo en modo 'w' (write) para sobrescribirlo\nwith open(filename, 'w') as file:\n    file.write(line)\n\nwith open(filename2, 'a') as file:\n    file.write(line)\n\n# Devuelvo el mensaje para continuar con el flujo (puedes personalizar este valor)\nmsg['payload'] = filename  # Pasamos el nombre del archivo que se modificó\nreturn msg\n",
+        "outputs": 1,
+        "x": 320,
+        "y": 80,
+        "wires": [
+            [
+                "a5692a860448da4d",
+                "050c41abd7a84f6b"
+            ]
+        ]
+    },
+    {
+        "id": "dd8a94a996d0f074",
+        "type": "inject",
+        "z": "ee2019af8ac50aa3",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 240,
+        "wires": [
+            [
+                "ae1128836eb8e43e"
+            ]
+        ]
+    },
+    {
+        "id": "ae1128836eb8e43e",
+        "type": "function",
+        "z": "ee2019af8ac50aa3",
+        "name": "Deteccion alarma",
+        "func": "// Conectar a Ethereum usando ethers.js\nconst { ethers } = global.get('ethers');\nconst contractAddress = \"0x98E9D4b06307995A1975350A47F415b050faA8e8\"; // Dirección del contrato\nconst abi = [\n\t{\n\t\t\"anonymous\": false,\n\t\t\"inputs\": [\n\t\t\t{\n\t\t\t\t\"indexed\": true,\n\t\t\t\t\"internalType\": \"address\",\n\t\t\t\t\"name\": \"user\",\n\t\t\t\t\"type\": \"address\"\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"indexed\": false,\n\t\t\t\t\"internalType\": \"string\",\n\t\t\t\t\"name\": \"fileHash\",\n\t\t\t\t\"type\": \"string\"\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"indexed\": false,\n\t\t\t\t\"internalType\": \"uint256\",\n\t\t\t\t\"name\": \"timestamp\",\n\t\t\t\t\"type\": \"uint256\"\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"indexed\": false,\n\t\t\t\t\"internalType\": \"string\",\n\t\t\t\t\"name\": \"sensorType\",\n\t\t\t\t\"type\": \"string\"\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"indexed\": false,\n\t\t\t\t\"internalType\": \"uint256\",\n\t\t\t\t\"name\": \"sensorValue\",\n\t\t\t\t\"type\": \"uint256\"\n\t\t\t}\n\t\t],\n\t\t\"name\": \"SensorAlertTriggered\",\n\t\t\"type\": \"event\"\n\t},\n\t{\n\t\t\"inputs\": [\n\t\t\t{\n\t\t\t\t\"internalType\": \"address\",\n\t\t\t\t\"name\": \"\",\n\t\t\t\t\"type\": \"address\"\n\t\t\t}\n\t\t],\n\t\t\"name\": \"alertStatus\",\n\t\t\"outputs\": [\n\t\t\t{\n\t\t\t\t\"internalType\": \"bool\",\n\t\t\t\t\"name\": \"\",\n\t\t\t\t\"type\": \"bool\"\n\t\t\t}\n\t\t],\n\t\t\"stateMutability\": \"view\",\n\t\t\"type\": \"function\"\n\t},\n\t{\n\t\t\"inputs\": [\n\t\t\t{\n\t\t\t\t\"internalType\": \"string\",\n\t\t\t\t\"name\": \"fileHash\",\n\t\t\t\t\"type\": \"string\"\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"internalType\": \"uint256\",\n\t\t\t\t\"name\": \"pirValue\",\n\t\t\t\t\"type\": \"uint256\"\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"internalType\": \"uint256\",\n\t\t\t\t\"name\": \"vibration1Value\",\n\t\t\t\t\"type\": \"uint256\"\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"internalType\": \"uint256\",\n\t\t\t\t\"name\": \"vibration2Value\",\n\t\t\t\t\"type\": \"uint256\"\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"internalType\": \"uint256\",\n\t\t\t\t\"name\": \"magneticoValue\",\n\t\t\t\t\"type\": \"uint256\"\n\t\t\t}\n\t\t],\n\t\t\"name\": \"checkSensorsAndTriggerAlert\",\n\t\t\"outputs\": [],\n\t\t\"stateMutability\": \"nonpayable\",\n\t\t\"type\": \"function\"\n\t},\n\t{\n\t\t\"inputs\": [],\n\t\t\"name\": \"getAlertStatus\",\n\t\t\"outputs\": [\n\t\t\t{\n\t\t\t\t\"internalType\": \"bool\",\n\t\t\t\t\"name\": \"\",\n\t\t\t\t\"type\": \"bool\"\n\t\t\t}\n\t\t],\n\t\t\"stateMutability\": \"view\",\n\t\t\"type\": \"function\"\n\t},\n\t{\n\t\t\"inputs\": [],\n\t\t\"name\": \"getFileHash\",\n\t\t\"outputs\": [\n\t\t\t{\n\t\t\t\t\"internalType\": \"string\",\n\t\t\t\t\"name\": \"\",\n\t\t\t\t\"type\": \"string\"\n\t\t\t}\n\t\t],\n\t\t\"stateMutability\": \"view\",\n\t\t\"type\": \"function\"\n\t},\n\t{\n\t\t\"inputs\": [\n\t\t\t{\n\t\t\t\t\"internalType\": \"string\",\n\t\t\t\t\"name\": \"fileHash\",\n\t\t\t\t\"type\": \"string\"\n\t\t\t}\n\t\t],\n\t\t\"name\": \"setFileIPFS\",\n\t\t\"outputs\": [],\n\t\t\"stateMutability\": \"nonpayable\",\n\t\t\"type\": \"function\"\n\t},\n\t{\n\t\t\"inputs\": [\n\t\t\t{\n\t\t\t\t\"internalType\": \"address\",\n\t\t\t\t\"name\": \"\",\n\t\t\t\t\"type\": \"address\"\n\t\t\t}\n\t\t],\n\t\t\"name\": \"userFiles\",\n\t\t\"outputs\": [\n\t\t\t{\n\t\t\t\t\"internalType\": \"string\",\n\t\t\t\t\"name\": \"\",\n\t\t\t\t\"type\": \"string\"\n\t\t\t}\n\t\t],\n\t\t\"stateMutability\": \"view\",\n\t\t\"type\": \"function\"\n\t}\n];\n\nconst provider = new ethers.providers.JsonRpcProvider(\"https://sepolia.infura.io/v3/6421697a47b84ae085ef458718c6cb97\"); // RPC Sepolia\nconst contract = new ethers.Contract(contractAddress, abi, provider);\n\n// Configurar el listener para el evento 'SensorAlertTriggered'\ncontract.on('SensorAlertTriggered', (user, fileHash, timestamp, sensorType, sensorValue) => {\n    // Mostrar los datos del evento en el log\n    node.warn(`Alerta detectada! Usuario: ${user}, Sensor: ${sensorType}, Valor: ${sensorValue}`);\n\n    // Crear un mensaje con los datos del evento\n    msg.payload = {\n        user: user,\n        fileHash: fileHash,\n        timestamp: timestamp,\n        sensorType: sensorType,\n        sensorValue: sensorValue\n    };\n\n    // Enviar el mensaje con los datos a otro nodo\n    node.warn(msg);\n});\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "PinataWeb3",
+                "module": "pinata-web3"
+            },
+            {
+                "var": "fs",
+                "module": "fs"
+            },
+            {
+                "var": "buffer",
+                "module": "buffer"
+            },
+            {
+                "var": "File",
+                "module": "File"
+            }
+        ],
+        "x": 430,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    }
+]
